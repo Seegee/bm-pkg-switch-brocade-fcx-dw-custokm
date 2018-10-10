@@ -20,18 +20,20 @@ return [
     ],
     'set_interface_port_on' => [
         'interface eth :port',
-        'disable',
+        'no disable',
         'wr me',
     ],
     'set_interface_port_off' => [
         'interface eth :port',
-        'no disable',
+        'disable',
         'wr me',
     ],
     'set_interface_port_speed' => [
         # NOTE: Brocade has weird settings for port speed (1gbps-16gbps) - so we just auto negotiate.
         //'portcfgspeed 0',
-        '# Set Port Speed not supported on Brocade',
+        'interface eth :port',
+        'speed-duplex :speed',
+        'wr me',
     ],
     'interface_wipe' => [
         'vlan :vlan',
