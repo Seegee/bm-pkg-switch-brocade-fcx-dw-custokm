@@ -2,12 +2,12 @@
   "data": {
     "slug": "switch-brocade-fcx-layer3",
     "name": "Switch Type: Brocade FCX Layer 3",
-    "semver": "1.0.0",
+    "semver": "1.1.0",
     "description": "This package adds support for Brocade FCX3 Layer 3 switch configurations where the IP Entities are configured on the rack-level switches instead of the core router.",
     "download_url": "https://api.packages.synergycp.com/package/synergycp/switch-brocade-fcx-layer3/download.tar.gz",
-    "release_date_unix": 1574636981,
+    "release_date_unix": 1592792350,
     "changelog": [
-      "Initial versioned release"
+      "Update the package to match the new SynergyCP 2.0.0 API specifications"
     ]
   }
 }
