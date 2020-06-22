@@ -15,7 +15,7 @@ class SwitchBrocadeFcxLayer3Format extends BrocadeFormat
      *
      * @return string
      */
-    public function portSpeed($speed)
+    public function portSpeed($speed): string
     {
         switch ($speed) {
             case 0:
